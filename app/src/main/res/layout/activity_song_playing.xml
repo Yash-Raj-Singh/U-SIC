@@ -27,7 +27,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="231dp"
+        android:padding="10dp"
         android:text="TextView"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="marquee"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:fadingEdge="horizontal"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -43,7 +49,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.145" />
+        app:layout_constraintVertical_bias="0.145"
+        android:thumbTint="@color/Red"
+        android:progressTint="@color/Red_light"/>
 
     <LinearLayout
         android:layout_width="371dp"
@@ -62,11 +70,11 @@
             app:srcCompat="@drawable/previous" />
 
         <ImageView
-            android:id="@+id/play"
+            android:id="@+id/pause"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:srcCompat="@drawable/play" />
+            app:srcCompat="@drawable/pause" />
 
         <ImageView
             android:id="@+id/next"
@@ -74,5 +82,6 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             app:srcCompat="@drawable/next" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
