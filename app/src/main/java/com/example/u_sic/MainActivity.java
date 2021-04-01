@@ -44,8 +44,9 @@ public class MainActivity extends AppCompatActivity {
                             items[i] = mySongs.get(i).getName().replace(".mp3", "");
                         }
 
-                        ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1, items);
-                        listView.setAdapter(adapter);
+                       // ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1, items);
+                        adapter ad = new adapter(MainActivity.this, R.layout.activity_play_song, items);
+                        listView.setAdapter(ad);
                         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                             @Override
                             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="Red_light">#ff636e</color>
     <color name="Red">#ff4654</color>
+    <color name="icon_color">#14dcd2</color>
+
 </resources>
