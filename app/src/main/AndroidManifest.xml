@@ -6,15 +6,20 @@
 
     <application
         android:allowBackup="true"
-        android:requestLegacyExternalStorage="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.USIC">
-        <activity android:name=".songPlaying"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".MainActivity">
+
+        <activity
+            android:name=".songPlaying"
+            android:label="Music Player"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="Library">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
